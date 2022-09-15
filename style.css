@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+ body {
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+:root{
+  --red-purple-gradient: linear-gradient(to bottom, #FF5C36, #383ECC);
+  --sky-blue-gradient: linear-gradient(to bottom, #74DEF7, #383ECC);
+  --white: #FFF;
+  --ff-poppins: "Poppins", sans-sarif;
+  --fs-1: 14px;
+  --fs-2: 12px;
+  --fw-400: 400;
+}
+.area{
+  width: 375px;
+  height: 882px;
+  margin: 20px auto;
+
+  background-color: rgb(240, 238, 238);
+  z-index: -1;
+}
+
+.card{
+  width: 375px;
+  height: 812px;
+
+  color: #fff;
+  border-bottom-left-radius: 52rem 34rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 15%);
+  position: relative;
+  opacity: 90%;
+ z-index: 5;
+}
+.card-1{
+  background-image: var(--sky-blue-gradient);
+
+}
+.card-2{
+   background-image: var(--red-purple-gradient);
+}
+.inputs{
+  padding-top: 40px;
+}
+.inputs input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 250px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  color: gray;
+  border-bottom: 1px solid white;
+
+}
+input::placeholder{
+  color: white;
+}
+input:focus{
+  outline: none;
+  border-bottom: 1px solid white;
+
+}
+.person{
+  padding-top: 50px;
+  font-size: 90px;
+  font-weight: var(--fw-400);
+}
+button{
+  background-color: #fff;
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.logo-row{
+  color: rgb(81, 81, 81);
+}
+.card .out-icon{
+    position: relative;
+    color: black;
+    bottom: -290px;
+    left: -150px;
+    border-radius: 50%;
+    padding: 20px;
+    background-image: var(--sky-blue-gradient);
+}
+
+
+.card::before {
+  content: "";
+  width: 375px;
+  height: 812px;
+  border-bottom-left-radius: 52rem 34rem;
+  position: absolute;
+
+  top: 40px;
+  left: -1px;
+  opacity: 70%;
+  z-index: 0;
+}
+
+.card-1::before{
+  background: var(--sky-blue-gradient);
+}
+.card-2::before{
+  background: var(--red-purple-gradient);
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+}
+
+@media(max-width:900px){
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+}
