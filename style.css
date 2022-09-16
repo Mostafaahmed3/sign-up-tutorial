@@ -30,7 +30,7 @@ h2 {
   margin: 20px auto;
 
   background-color: rgb(240, 238, 238);
-  z-index: -1;
+  
 }
 
 .card{
@@ -115,7 +115,7 @@ button{
   top: 40px;
   left: -1px;
   opacity: 70%;
-  z-index: 0;
+  z-index: -1;
 }
 
 .card-1::before{
